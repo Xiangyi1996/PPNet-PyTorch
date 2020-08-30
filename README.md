@@ -17,7 +17,7 @@ Official Implementation of [Part-aware Prototype Network for Few-shot Semantic S
 ## Get Started
 ```
 git clone 
-cd Part-aware-Prototype-Network
+cd PPNet-PyTorch
 mkdir logs
 mkdir outputs
 ```
