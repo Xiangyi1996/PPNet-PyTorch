@@ -17,7 +17,7 @@ Official Implementation of [Part-aware Prototype Network for Few-shot Semantic S
 ## Get Started
 ```
 git clone 
-cd Part-aware-Prototype-Network
+cd PPNet-PyTorch
 mkdir logs
 mkdir outputs
 ```
@@ -76,15 +76,25 @@ sh script/test_part_sem.sh
 # Test part + semantic branch + unlabel data model
 sh script/test_graph.sh
 ```
-
+#### 1-way 1-shot 
 |   1-way 1-shot | Download link             |        meanIoU                                | 
 |-----------------------|:--------------------------------------------------:|:--------------------------------------------------:|
-| PANet* | [model](https://drive.google.com/drive/folders/1OrVJ74LbhgUhIOp8nen79Yv56esO4an4?usp=sharing)                |  49.10  |
-| Our + part | [model](https://drive.google.com/drive/folders/1cZBV-v8uvbmWPhiAlBDyYUT8MoT6zzto?usp=sharing)            |  50.40  | 
-| Our + part + sem | [model](https://drive.google.com/drive/folders/1MDy_-Mt4lLyUWPhXOTcssrT5R0rI6IPZ?usp=sharing)      |  51.50  |
-| Our + part + sem + un | [model](https://drive.google.com/drive/folders/1gbgYrTTcdkaS48C6ohlSc0NhK26wdoV_?usp=sharing) |  52.84  |
+| PANet* | [model](https://drive.google.com/drive/folders/1OrVJ74LbhgUhIOp8nen79Yv56esO4an4?usp=sharing)           |  49.10  |
+| + PAP | [model](https://drive.google.com/drive/folders/1cZBV-v8uvbmWPhiAlBDyYUT8MoT6zzto?usp=sharing)            |  50.40  | 
+| + PAP + SEM | [model](https://drive.google.com/drive/folders/1MDy_-Mt4lLyUWPhXOTcssrT5R0rI6IPZ?usp=sharing)      |  51.50  |
+| + PAP + SEM + UD | [model](https://drive.google.com/drive/folders/1gbgYrTTcdkaS48C6ohlSc0NhK26wdoV_?usp=sharing) |  52.84  |
 
 log files are available [here](https://drive.google.com/drive/folders/1mXidsz9WtUFjx9OEw94N2oN3mDT-I6ix?usp=sharing)
+
+#### N-way K-shot final model 
+
+|   N-way K-shot | Setting | Download link             |        meanIoU                                | 
+|-----------------------|:--------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------:|
+| 1-way 5-shot | + PAP + SEM + UD | [model](https://drive.google.com/drive/folders/1axevPqPjtYOhCAgC5EqwyuvqGEdRl-qe?usp=sharing)            |  62.97  |
+| 2-way 1-shot | + PAP + SEM + UD | [model](https://drive.google.com/drive/folders/1WVQNXkmgoei6VkzC29uGJi5fIqYLLt4T?usp=sharing)            |  51.65  | 
+| 2-way 5-shot | + PAP + SEM + UD | [model](https://drive.google.com/drive/folders/1kecVIVW4b6dxX4VFpWX2kF1tn8LUGCmR?usp=sharing)            |  61.30  |
+
+
 ## Visualization for Pascal VOC
 ![alt text](demo/vis.png)
 
