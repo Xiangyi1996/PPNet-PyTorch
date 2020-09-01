@@ -10,6 +10,7 @@ Official Implementation of [Part-aware Prototype Network for Few-shot Semantic S
 * torchvision 0.4.2
 * Cuda version 10.0
 * [pykeops](https://www.kernel-operations.io/keops/python/installation.html)
+* [fast_slic](https://github.com/Algy/fast-slic)(Option)
 
 ![alt text](demo/overview.png)
 
@@ -43,6 +44,7 @@ weights and put them under FewShotSeg-dataset/cache/ folder.
 
 Download the unlabel superpixel from [here](https://drive.google.com/file/d/1732jFI0qQBkGyjlWVExxyZYSru7HACkP/view?usp=sharing) and 
 put it under FewShotSeg-dataset/Pascal/superpixel folder.
+If you want to generate your own superpixel data, please follow the [fast_slic](https://github.com/Algy/fast-slic).
 
 
 ### Training & Evaluation in Command Line for Pascal VOC
