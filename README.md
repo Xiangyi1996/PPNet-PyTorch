@@ -112,4 +112,4 @@ Please consider citing our paper if the project helps your research. BibTeX refe
 ```
 
 ## References
-Parts of this code are based on [PANet](https://github.com/kaixin96/PANet)
+Part of our code are based on [PANet](https://github.com/kaixin96/PANet)
