@@ -1,0 +1,6 @@
+fast_slic
+pykeops
+scikit-image
+tqdm
+sacred
+tensorboardX

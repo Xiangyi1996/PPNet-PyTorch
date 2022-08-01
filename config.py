@@ -68,7 +68,7 @@ def cfg():
         model = {
             'part': True,
             'semi': False,
-            'sem': False,
+            'sem': True,
             'resnet': True,
             'slic': False,
 
